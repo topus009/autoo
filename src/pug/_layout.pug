@@ -6,15 +6,8 @@ html(lang='ru')
     block title
     block meta
     block styles
-      // build:css css/style.css
       link(href='css/style.css', rel='stylesheet', type='text/css', defer)
-      // endbuild
     block headerScripts
   body
     block content
-    // build:js js/vendor.js
-    script(src='js/vendor.js', defer)
-    // endbuild
-    // build:js js/main.js
     script(src='js/main.js', defer)
-    // endbuild

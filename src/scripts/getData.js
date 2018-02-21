@@ -2,7 +2,7 @@ const request = function (url) {
   return new Promise((resolve, reject) => {
     const xhr = new XMLHttpRequest();
     xhr.open('GET', url, false);
-    xhr.onload = () => {
+    xhr.onload = function () {
       if (this.status === 200) {
         resolve(JSON.parse(this.response));
       } else {
